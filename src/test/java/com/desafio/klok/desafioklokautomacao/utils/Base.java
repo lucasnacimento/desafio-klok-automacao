@@ -10,7 +10,7 @@ public class Base {
     protected static WebDriver driver;
 
     public static void start() {
-        System.setProperty("webdriver.chrome.driver", "C:\\Users\\Lucas\\Downloads\\chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "./driver/chromedriver.exe");
         driver = new ChromeDriver();
         driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
     }
